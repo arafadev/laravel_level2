@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class {{ class }} extends Model
 {
     use HasFactory;
+
+    protected $table = '';
+    protected $primary_key ='id';
+    protected $keyType ='integer';
+    protected $incrementing =true;
+    protected $guarded = ['id'];
+
+    const UPLOADPATH = 'images/';
+
+    const UPLOADFIELDS = [];
 }
